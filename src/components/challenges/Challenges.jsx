@@ -1,6 +1,13 @@
-import React from 'react';
+import React from 'react';  
+import AddChallenge from './AddChallenge';
+import  ChallengeList  from "./ChallengeList ";
 const Challenges = () => {
-    return ( <h3>Challenges</h3> );
+    return (
+        <React.Fragment>
+            <AddChallenge />
+        <ChallengeList/>
+        </React.Fragment>
+    );
 }
- 
+
 export default Challenges;

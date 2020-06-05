@@ -4,10 +4,22 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import ThemeContextProvider from './contexts/ThemeContext';
+import ChallengeContextProvider from './contexts/ChallengeContext';
+
+const AppConnector=()=>{
+  return(
+    <ThemeContextProvider>
+    <ChallengeContextProvider>
+        <App />
+    </ChallengeContextProvider>
+</ThemeContextProvider>
+  )
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <AppConnector/>
   </React.StrictMode>,
   document.getElementById('root')
 );
