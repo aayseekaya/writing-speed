@@ -48,7 +48,7 @@ const AddChallenge = () => {
             <div className="card-body">
                 <form onSubmit={submitHandler}>
                     <div className="form-group">
-                        <label htmlFor="text">Metin:</label>
+                        <label htmlFor="text">Metin(text):</label>
                         <input type="text" name="text" className="form-control" onChange={changeHandler} value={challenge.text} autoComplete="off" placeholder="Metni giriniz" required />
                     </div>
                     <div className="form-group">
